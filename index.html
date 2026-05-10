@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>teeprinthub.co.uk is For Sale</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #050505, #151515, #ff6a00);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .bg-circle {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 106, 0, 0.25);
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: float 6s infinite alternate ease-in-out;
+    }
+
+    .circle-1 {
+      top: 10%;
+      left: 10%;
+    }
+
+    .circle-2 {
+      bottom: 10%;
+      right: 10%;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0) scale(1);
+      }
+      to {
+        transform: translateY(-40px) scale(1.15);
+      }
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(18px);
+      border-radius: 28px;
+      padding: 50px 30px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ff6a00;
+      color: #111;
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 24px;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 106, 0, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 18px rgba(255, 106, 0, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 106, 0, 0);
+      }
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: #ff8a1f;
+    }
+
+    p {
+      color: #e6e6e6;
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 610px;
+      margin: 0 auto 32px;
+    }
+
+    .domain {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-size: clamp(24px, 5vw, 42px);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 16px 26px;
+      border-radius: 14px;
+      font-weight: 800;
+      transition: 0.25s ease;
+      display: inline-block;
+    }
+
+    .btn-email {
+      background: #ff6a00;
+      color: #111;
+    }
+
+    .btn-telegram {
+      background: white;
+      color: #111;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .note {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #cfcfcf;
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 38px 22px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-circle circle-1"></div>
+  <div class="bg-circle circle-2"></div>
+
+  <main class="card">
+    <div class="badge">Premium UK Domain For Sale</div>
+
+    <h1>This Domain is <span>Available</span></h1>
+
+    <div class="domain">teeprinthub.co.uk</div>
+
+    <p>
+      A clean, brandable UK domain for a custom t-shirt printing, apparel printing,
+      clothing brand, print-on-demand, or ecommerce business.
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-email" href="mailto:teamxtrm.bd@gmail.com?subject=Offer%20for%20teeprinthub.co.uk">
+        Contact by Email
+      </a>
+
+      <a class="btn btn-telegram" href="https://t.me/ExecutorHere" target="_blank" rel="noopener">
+        Contact on Telegram
+      </a>
+    </div>
+
+    <div class="note">
+      Serious buyers only. Make your best offer.
+    </div>
+  </main>
+</body>
+</html>
